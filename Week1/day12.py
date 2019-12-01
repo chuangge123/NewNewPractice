@@ -133,20 +133,23 @@ import re
 # print(ret)
 # ret = re.findall('(^(https?://)([^\.[\u4e00-\u9fa5]+)+\.(?:[^\.\u4e00-\u9fa5]+)+\.)','https://blog.csdn.net/wangchaoqi1985/article/details/82810471我曹乐https://blog.csdn.net/wangchaoqi1985/article/details/82810471')
 # print(ret)
-"""
-ret = re.findall('[^\u4e00-\u9fa5]+', 'https://blog.csdn.net/wan温恩gchao我查看附件考虑i1985/article/deta我啊哈哦啊ils/82810471我曹乐')
-print(ret)
-str = ''
-for i in ret:
-    # print('%s %s'% (ret.index(i) + 1, i))
-    str += i
-print(str)
+
+# ret = re.findall('[^\u4e00-\u9fa5]+', 'https://blog.csdn.net/wan温恩gchao我查看附件考虑i1985/article/deta我啊哈哦啊ils/82810471我曹乐')
+# print(ret)
+# str = ''
+# for i in ret:
+#     # print('%s %s'% (ret.index(i) + 1, i))
+#     str += i
+# print(str)
 # print(''.join((a, b)))
-"""
-ret = re.findall('((https?://)([^\.[\u4e00-\u9fa5]+)+\.\w+\.\w+(\.)?\w+/)','https://blog.csdn.net/wangchaoqi1985/article/details/82810471我曹乐http://asdf.cggggghn.net/wangchaoqi1985/article/details/82810471http://192.168.1.1/winssf/fdsfdsf/dog.html')
-print(ret)
+
+# ret = re.findall('((https?://)([^\.+)+\.\w+\.\w+(\.)?\w+/)','https://blog.csdns.net/wangchaoqi1985/article/details/82810471我曹乐http://asdf.cggggghn.net/wangchaoqi1985/article/details/82810471http://192.168.1.1/winssf/fdsfdsf/dog.html')
+# print(ret)
+# print('https://blog.csdnssdfjkslj////////////sdfwer$%&&#$、net http://dsfsdaf')
 # 2019.11.23
 # 首先中文在正则中本来就是例外 \w 也会把中文获取到
 # 在筛选url中，无法第一次用正则给筛除掉中文，
 # 因为是按照头http头来进行筛选，是一条整体的字符。
 # 只能在已经知道是url的条件下进行 筛除中文 ，并用for循环进行拼接
+# ret = re.findall('[^/,.]+', 'nihao,woshinimabjk')
+# print(ret)
