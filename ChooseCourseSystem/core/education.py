@@ -138,6 +138,16 @@ class Teacher(Education, object):
     def modify_score(self, student, score):
         student.score = score
 
+    def show_students(self):
+        if self.grade != None:
+            for student in self.grade.students:
+                student.show_student_info()
+        else:
+            print("请选择班级")
+
+    def show_info(self):
+        print("teacher:name: %s\t school:%s\t grade:%s" %
+              (self.name, self.school, self.grade))
 
 class Course(Education, object):
     def __init__(self, name, cycle, price):
