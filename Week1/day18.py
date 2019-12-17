@@ -37,7 +37,7 @@ import gevent
 
 def foo():
     print('11')
-    gevent.sleep(0) #模拟io 阻塞
+    gevent.sleep(0)  # 模拟io 阻塞
     print('222')
 
 
