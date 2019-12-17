@@ -54,6 +54,7 @@ class School(Education, object):
         print('班级%s创建成功' % grade.name)
         return grade
 
+
 class Grade(Education, object):  # 创建班级
     def __init__(self, name, course):
         Education.__init__(self, name)
@@ -149,6 +150,7 @@ class Teacher(Education, object):
         print("teacher:name: %s\t school:%s\t grade:%s" %
               (self.name, self.school, self.grade))
 
+
 class Course(Education, object):
     def __init__(self, name, cycle, price):
         Education.__init__(self, name)
@@ -166,7 +168,3 @@ if __name__ == '__main__':
     student = Student("小齐", school, grade)
     teacher.check_students(grade)
     print(teacher.grade)
-
-
-
-
