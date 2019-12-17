@@ -65,6 +65,8 @@ class LagouSpider(object):
         os.system(r"C:\Users\lark\Pictures\Camera Roll\test.jpg")
 #         提交分支。
         time.sleep(1)
+#         skdajfklj
+        time.sleep(456)
 
 if __name__ == '__main__':
     a = LagouSpider()
